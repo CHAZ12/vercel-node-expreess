@@ -26,7 +26,7 @@ function GetUrlData(fullUrl) {
     const newurl = JSON.stringify(fullUrl);
     const name = '(?<=~)(.+)(?=:)';
     var rname = newurl.match(name);
-    console.log(JSON.stringify(rname));
+    console.log(JSON.stringify(name));
     //const msg = "(?<=" + rname + ":)(?<=:).+";
     ///var rmsg = newurl.match(msg)[0].replace('"', '');
     //console.log(rmsg + ',' + rname);
