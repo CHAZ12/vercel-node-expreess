@@ -6,7 +6,7 @@ const app = express();
 router.get("/", async (req, res) => {
 try {
     const fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl; //Get full Url request
-    GetUrlData(fullUrl)
+   // GetUrlData(fullUrl)
     res.json({
         status: 200,
         message: 'data sent'
