@@ -29,7 +29,7 @@ function GetUrlData(fullUrl) {
     //var rname = newurl.match(name)[0];
     //const msg = "(?<=" + rname + ":)(?<=:).+";
     ///var rmsg = newurl.match(msg)[0].replace('"', '');
-    console.log(rmsg + ',' + rname);
+    //console.log(rmsg + ',' + rname);
    // SendDiscod(rmsg, rname);
 }
 
