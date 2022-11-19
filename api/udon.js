@@ -21,7 +21,7 @@ try {
 });
 module.exports = router;
 
-function GetUrlData(fullUrl) {
+/*function GetUrlData(fullUrl) {
     // user who sent name and message
     const newurl = JSON.stringify(fullUrl);
     const name = '(?<=~)(.+)(?=:)';
@@ -32,7 +32,7 @@ function GetUrlData(fullUrl) {
     SendDiscod(rmsg, rname);
 }
 
-/*function SendDiscod(msg,name) {
+function SendDiscod(msg,name) {
     console.log('SendDiscord');
     const url = "https://discord.com/api/webhooks/1042324588211736586/P_HRl-SUCEdgsig4-flBRApTC1YDombC74FjkjgoOaRmRd5C71Md1Rsodtv1REl_pOHu";
     const HEADER = {
