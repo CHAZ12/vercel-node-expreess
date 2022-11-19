@@ -22,12 +22,13 @@ try {
 module.exports = router;
 
 function GetUrlData(fullUrl) {
+    console.log(fullUrl);
     // user who sent name and message
-    const newurl = JSON.stringify(fullUrl);
-    const name = '(?<=~)(.+)(?=:)';
-    var rname = newurl.match(name)[0];
-    const msg = "(?<=" + rname + ":)(?<=:).+";
-    var rmsg = newurl.match(msg)[0].replace('"', '');
+   // const newurl = JSON.stringify(fullUrl);
+    //const name = '(?<=~)(.+)(?=:)';
+    //var rname = newurl.match(name)[0];
+    //const msg = "(?<=" + rname + ":)(?<=:).+";
+    ///var rmsg = newurl.match(msg)[0].replace('"', '');
     console.log(rmsg + ',' + rname);
    // SendDiscod(rmsg, rname);
 }
