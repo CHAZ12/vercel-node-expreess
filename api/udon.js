@@ -25,8 +25,8 @@ function GetUrlData(fullUrl) {
     // user who sent name and message
     const newurl = JSON.stringify(fullUrl);
     const name = '(?<=~)(.+)(?=:)';
-    var rname = newurl.match(name)[0];
-    console.log(rname);
+    var rname = newurl.match(name);
+    console.log(JSON.stringify(rname));
     //const msg = "(?<=" + rname + ":)(?<=:).+";
     ///var rmsg = newurl.match(msg)[0].replace('"', '');
     //console.log(rmsg + ',' + rname);
