@@ -24,7 +24,7 @@ module.exports = router;
 function GetUrlData(fullUrl) {
     console.log(fullUrl);
     // user who sent name and message
-   // const newurl = JSON.stringify(fullUrl);
+    const newurl = JSON.stringify(fullUrl);
     //const name = '(?<=~)(.+)(?=:)';
     //var rname = newurl.match(name)[0];
     //const msg = "(?<=" + rname + ":)(?<=:).+";
