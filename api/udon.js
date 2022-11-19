@@ -21,7 +21,7 @@ try {
 });
 module.exports = router;
 
-/*function GetUrlData(fullUrl) {
+function GetUrlData(fullUrl) {
     // user who sent name and message
     const newurl = JSON.stringify(fullUrl);
     const name = '(?<=~)(.+)(?=:)';
@@ -53,4 +53,4 @@ function SendDiscod(msg,name) {
             }
         })
     console.log('sentDiscord');
-};*/
+};
