@@ -6,7 +6,7 @@ const app = express();
 router.get("/", async (req, res) => {
 try {
     const fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl; //Get full Url request
-   // GetUrlData(fullUrl)
+    GetUrlData(fullUrl)
     res.json({
         status: 200,
         message: fullUrl
@@ -29,7 +29,7 @@ function GetUrlData(fullUrl) {
     const msg = "(?<=" + rname + ":)(?<=:).+";
     var rmsg = newurl.match(msg)[0].replace('"', '');
     console.log(rmsg + ',' + rname);
-    SendDiscod(rmsg, rname);
+   // SendDiscod(rmsg, rname);
 }
 
 function SendDiscod(msg,name) {
