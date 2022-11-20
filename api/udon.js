@@ -9,7 +9,7 @@ try {
     GetUrlData(fullUrl)
     res.json({
         status: 200,
-        message: fullUrl
+        message: JSON.stringify(fullUrl)
         
     });
 
