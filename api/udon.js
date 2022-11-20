@@ -32,7 +32,7 @@ function GetUrlData(fullUrl) {
     SendDiscod(rname, rmsg);
 }
 
-function SendDiscod(name,msg) {
+async SendDiscod(name,msg) {
     console.log('SendDiscord');
     const url = "https://discord.com/api/webhooks/1043717017116610560/fvr6uQ26QR3RIOMwmQYpr4Hyd142Vdpi_ZQ8EF-McTP5T_QA2yWe9wCS0WtjM_x8FLrq";
     const HEADER = {
@@ -45,13 +45,13 @@ function SendDiscod(name,msg) {
         content: name + ': ' + msg 
     }
     console.log(DATA);
-    axios
-       axios.post(url, DATA, HEADER)
+       const response = axios.post(url, DATA, HEADER)
       /*  axios.then((response) => {
             if (response.status === 201) {
                 console.log('Req body:', response.data)
                 console.log('Req header :', response.headers)
             }
         }) */
+    console.log(response);
     console.log('sentDiscord');
 };
