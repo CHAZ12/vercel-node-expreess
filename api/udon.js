@@ -46,7 +46,7 @@ function SendDiscod(name,msg) {
     }
     console.log(DATA);
     axios
-       await axios.post(url, DATA, HEADER)
+       axios.post(url, DATA, HEADER)
       /*  axios.then((response) => {
             if (response.status === 201) {
                 console.log('Req body:', response.data)
