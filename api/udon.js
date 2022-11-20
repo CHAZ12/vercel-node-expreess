@@ -27,7 +27,7 @@ function GetUrlData(fullUrl) {
     const name = '(?<=~)(.+)(?=%3A)';
     var rname = newurl.match(name)[0];
     const msg = "(?<=" + rname + "%3A)(?<=%3A).+";
-    var rmsg = newurl.match(msg)[0].replace('"', '');
+    var rmsg = newurl.match(msg)[0].replace('"', '').replace('_','');
     console.log(rmsg + ',' + rname);
     SendDiscod(rname, rmsg);
 }
