@@ -26,10 +26,9 @@ function GetUrlData(fullUrl) {
     const newurl = JSON.stringify(fullUrl);
     const name = '(?<=~)(.+)(?=%)';
     var rname = newurl.match(name)[0];
-    console.log(JSON.stringify(rname) + ' lol');
-    //const msg = "(?<=" + rname + ":)(?<=:).+";
-    ///var rmsg = newurl.match(msg)[0].replace('"', '');
-    //console.log(rmsg + ',' + rname);
+    const msg = "(?<=" + rname + ":)(?<=:).+";
+    var rmsg = newurl.match(msg)[0].replace('"', '');
+    console.log(rmsg + ',' + rname);
    // SendDiscod(rmsg, rname);
 }
 
