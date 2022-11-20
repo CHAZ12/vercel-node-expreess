@@ -45,13 +45,13 @@ async function SendDiscod(name,msg) {
         content: name + ': ' + msg 
     }
     console.log(DATA);
-    const response = axios.post(url, DATA, HEADER)
-    axios.then((response) => {
+    axios
+        .post(url, DATA, HEADER)
+        .then((response) => {
             if (response.status === 201) {
                 console.log('Req body:', response.data)
                 console.log('Req header :', response.headers)
             }
         })
-    console.log(response);
     console.log('sentDiscord');
 };
