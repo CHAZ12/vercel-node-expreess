@@ -43,8 +43,8 @@ function SendDiscod(name,msg) {
     };
     const DATA = {
         content: name + ': ' + msg 
-        console.log(DATA);
     }
+    console.log(DATA);
     axios
         .post(url, DATA, HEADER)
         .then((response) => {
