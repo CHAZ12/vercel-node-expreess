@@ -1,7 +1,7 @@
 const express = require("express");
-const axios = require('axios')
 const router = express.Router();
 const app = express();
+const axios = require('axios')
 
 router.get("/", async (req, res) => {
 try {
@@ -32,10 +32,9 @@ function GetUrlData(fullUrl) {
     SendDiscod(rname, rmsg);
 }
 
-function SendDiscod(msg,name) {
+function SendDiscod(name,msg) {
     console.log('SendDiscord');
     const url = "https://discord.com/api/webhooks/1043717017116610560/fvr6uQ26QR3RIOMwmQYpr4Hyd142Vdpi_ZQ8EF-McTP5T_QA2yWe9wCS0WtjM_x8FLrq";
-    console.log(url);
     const HEADER = {
         headers: {
             'authorization': 'Authorization: Bot 966434794609209415',
@@ -44,6 +43,7 @@ function SendDiscod(msg,name) {
     };
     const DATA = {
         content: name + ': ' + msg 
+        console.log(DATA);
     }
     axios
         .post(url, DATA, HEADER)
