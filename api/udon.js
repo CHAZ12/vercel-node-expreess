@@ -46,12 +46,12 @@ function SendDiscod(name,msg) {
     }
     console.log(DATA);
     axios
-        axios.post(url, DATA, HEADER)
-        axios.then((response) => {
+       await axios.post(url, DATA, HEADER)
+      /*  axios.then((response) => {
             if (response.status === 201) {
                 console.log('Req body:', response.data)
                 console.log('Req header :', response.headers)
             }
-        })
+        }) */
     console.log('sentDiscord');
 };
