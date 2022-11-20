@@ -24,9 +24,9 @@ module.exports = router;
 function GetUrlData(fullUrl) {
     // user who sent name and message
     const newurl = JSON.stringify(fullUrl);
-    const name = '(?<=~)(.+)(?=%)';
+    const name = '(?<=~)(.+)(?=%3A)';
     var rname = newurl.match(name)[0];
-    const msg = "(?<=" + rname + "%)(?<=%).+";
+    const msg = "(?<=" + rname + "%3A)(?<=%3A).+";
     var rmsg = newurl.match(msg)[0].replace('"', '');
     console.log(rmsg + ',' + rname);
    // SendDiscod(rmsg, rname);
