@@ -53,5 +53,5 @@ async function SendDiscod(name,msg) {
                 console.log('Req header :', response.headers)
             }
         })
-    console.log('sentDiscord');
+    console.log('SentDiscord');
 };
