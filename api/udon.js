@@ -34,7 +34,7 @@ function GetUrlData(fullUrl) {
 
 async function SendDiscod(name,msg) {
     console.log('SendDiscord');
-    const url = "https://discord.com/api/webhooks/1043717017116610560/fvr6uQ26QR3RIOMwmQYpr4Hyd142Vdpi_ZQ8EF-McTP5T_QA2yWe9wCS0WtjM_x8FLrq";
+    const url = "https://discord.com/api/webhooks/...";
     const HEADER = {
         headers: {
             'authorization': 'Authorization: Bot 966434794609209415',
