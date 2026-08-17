@@ -37,7 +37,7 @@ async function SendDiscod(name,msg) {
     const url = "https://discord.com/api/webhooks/...";
     const HEADER = {
         headers: {
-            'authorization': 'Authorization: Bot 966434794609209415',
+            'authorization': 'Authorization: Bot #',
             'content-type': 'application/json'
         }
     };
